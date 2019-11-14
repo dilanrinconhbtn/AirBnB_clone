@@ -23,3 +23,16 @@ class Test_BaseModel(unittest.TestCase):
     def teardown(cls):
         """ Delete at the end of tests"""
         del cls.my_object
+
+    def test_instance_BaseModel(self):
+        """Testing my_object is instance of BaseModel"""
+        self.assertTrue(isinstance(self.my_object, BaseModel))
+
+    def test_str(self):
+        """Testing __str__"""
+        string = "[BaseModel] ({}) {}".format(self.my_model.id,
+                                              self.my_model.__dict__)
+        self.assertEqual(string, str(self.my_model))
+
+if __name__ == '__main__':
+    unittest.main()
