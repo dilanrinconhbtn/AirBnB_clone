@@ -47,46 +47,44 @@ button:hover {
 }
 
 .locations {
-    border-right: 1px solid #DDDDDD;
-}
-
-.locations {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
 }
 
-.amenities {
-    height: 100%;
-    width: 25%;
+.container .filters .amenities{
+    height:100;
+    width:25%;
 }
 
 .popover {
-    visibility: hidden;
-    width: 100%;
     border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    background: #FAFAFA;
-    padding-bottom: 25px;
-    height: 300px;
-    max-height: 300px;
+    border-radius:4px;
+    display:none;
+    margin:0;
+    background-color:#FAFAFA;
 }
-
-.amenities .popover {
-    padding: 20px 0;
-    margin-left: -5px;
-    margin-top: 1%;
-
+.locations:hover .popover{
+    margin-top:-20px;
+    display:block;
 }
-.locations .popover {
-    margin-top: 1%;
-
+.amenities:hover .popover{
+    margin-top:-20px;
+    display:block;
 }
 .popover ul {
-    list-style-type: none;
+    padding-top:30px;
+    padding-bottom:20px;
 }
 
-.amenities:hover .popover,
-.locations:hover .popover {
-    visibility: visible;
+.popover h2 {
+    margin-top:0;
+    margin-left:-50px;
+    margin-bottom:2px;
+    font-size:16px;
+}
+.popover li {
+    margin-top:2px;
+    margin-left:-30px;
+    list-style-type:none;
 }
