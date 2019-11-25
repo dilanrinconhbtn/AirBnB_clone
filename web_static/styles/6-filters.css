@@ -53,3 +53,8 @@ button:hover {
     display:none;
     background-color:#FAFAFA;
 }
+
+.amenities:hover .popover,
+.locations:hover .popover {
+    visibility: visible;
+}
